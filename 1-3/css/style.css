@@ -1,0 +1,57 @@
+@charset"utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+.content{background: #eee;
+		 border:1px solid #999;
+		 margin: 20px;
+         padding: 20px;
+         min-width: 600px;
+        
+		}
+.clear{zoom:1;}/*IE浏览器*/
+.clear:after{
+			 content:'';
+                 display:block;
+			 clear:both;
+			}/*标准浏览器*//*神马塞入空的字符串，然后转化为块，再清除两者...不懂/*清浮动*/
+.leftside{
+    float: left;
+	width: 198px;
+	height: 118px;
+	background: #fff;
+	border:1px solid #999;
+	float: left;
+	
+
+}
+.rightside{
+	float: right;
+	width: 118px;
+	height: 518px;
+	background: #fff;
+	border:1px solid #999;
+	float: right;
+	padding: 0 0 20px 0;
+}
+.leftside img{float: left; margin: 20px;}
+.teamname{
+	font-size: 15px;
+	margin-right: 20px;
+	margin-top: 40px;
+
+}
+.members{
+	margin: 20px;}
+.rightside img{border:1px solid #999;}
+.middle{
+	margin-left: 220px;
+    margin-right: 140px;
+    padding: 20px;
+    height: 100%;
+    background: #fff;
+	border:1px solid #999;
+}
+.middle p{margin: 20px;}

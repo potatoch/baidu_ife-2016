@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <fieldset id="form-gra-time">
+        <legend>请选择日期粒度及城市</legend>
+        <center>
+            <div class="grade">
+                <label>
+            <span class="selected">日</span>
+            <input name="gra-time" value="day" type="radio" checked="checked">
+        </label>
+                <label>
+            <span class="">周</span>
+            <input name="gra-time" value="week" type="radio">
+        </label>
+                <label>
+            <span class="">月</span>
+            <input name="gra-time" value="month" type="radio">
+        </label>
+            </div>
+            <select id="city-select">
+            <option>北京</option>
+        </select>
+        </center>
+    </fieldset>
+
+    <div class="aqi-chart-wrap">
+    </div>
+    <script src="task.js"></script>
+</body>
+
+</html>

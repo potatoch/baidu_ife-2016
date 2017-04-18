@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+
+}
+
+body{
+	 background-color: #dedede;
+	}
+
+#header {height: 60px;
+       	background-color: #333333;
+       	}
+.h-title img{width: 200px;height: 60px;float: left;}
+.h-title ul{float: right;margin-top:20px;}
+.h-title li{float: left;margin-right: 20px;}
+.h-title  a:link { 
+					font-size: 18px; 
+					color: #fff; 
+					text-decoration: none; 
+				  }
+.h-title  a:visited { 
+					font-size: 18px; 
+					color: #fff; 
+					text-decoration: none; 
+					} 
+.h-title  a:hover { 
+					font-size: 18px; 
+					color: #9f9589; 
+					text-decoration: underline;
+				   } 
+.content-main{
+				width: 1250px;
+				background-color: #fff;
+				margin: 20px auto;
+				padding: 30px 20px 30px 20px;
+				box-shadow: 4px 4px 4px #848484;
+
+             }
+.content-main h3{
+					color: #8f8d8e;
+					margin: 20px auto;
+
+					}           
+
+.content-main h4{
+					color: #8f8d8e;
+					margin: 20px auto;
+
+					}           
+
+#tab li{
+	width: 220px;
+	border:1px solid #cbcbcb;
+	margin:20px 20px;
+
+}
+#tab img{
+	margin: 10px 10px;
+}
+#tab p{
+	text-align:center;
+	margin-top: 10px;
+
+}
+.content-main ol{
+	margin-left: 40px;
+}
+.content-main table{
+	width: 1210px;
+	height: 120px;
+	border:1px solid #cccccc;
+	border-collapse: collapse;
+}.content-main td{
+	padding: 5px;
+	
+}
+.content-main table tr th {
+	padding: 5px;
+	text-align:left;
+	color: #fff;
+	background: #333333;
+	
+}
+.content-main tfoot{
+	background: #cccccc;
+}
+form{
+	margin-left: 300px;
+	margin-top: 40px;
+}
+input{
+
+	margin:20px 20px;
+}
+p.side2{margin-left: 140px;
+		color: #bfbfbf;
+        }
+p.side3{margin-left: 32px;}
+p.side4{margin-left: 80px;}
+p.side5{margin-left: 80px;}
+select{margin-left: 20px;}
+p.side6{margin-left: 80px;}
+p.side7{margin-left: 50px;}
+textarea{margin-left: 20px;
+		width: 500px;
+		height: 80px;
+	    vertical-align: top;	
+			}
+.side8{
+	background: #3355d0;
+	color: #fff;
+	width: 650px;
+	height: 40px;
+	border:none;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.side9{
+	margin:0 auto;
+	width: 1400px;
+	height: 80px;
+	background: #000000;
+	color:#fff; 
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+
+
+}

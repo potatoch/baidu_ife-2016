@@ -1,0 +1,92 @@
+.color-table tr+tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.color-table tr+tr:nth-child(-n+4) {
+    color: red;
+}
+
+.color-table tr:first-child {
+    background-color: #000;
+    color: #fff;
+}
+
+.text {
+    width: 100px;
+    margin: 40px 0;
+    transition: width .8s;
+}
+
+.text:focus {
+    width: 500px;
+}
+
+.labels>a:hover,
+a:link,
+a:visited {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.slides {
+    position: relative;
+    width: 350px;
+    height: 140px;
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+.slide-wrap {
+    position: relative;
+    width: 300%;
+    height: 100%;
+    transition: left 0.8s ease;
+}
+
+.slide {
+    float: left;
+    width: 33.3%;
+    height: 100%;
+}
+
+.slide:first-child {
+    background-color: red;
+}
+
+.slide:nth-child(2) {
+    background-color: blue;
+}
+
+.slide:nth-child(3) {
+    background-color: green;
+}
+
+#slide1:target~.slide-wrap {
+    left: 0;
+}
+
+#slide2:target~.slide-wrap {
+    left: -100%;
+}
+
+#slide3:target~.slide-wrap {
+    left: -200%;
+}
+
+.labels {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.labels>a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #fff;
+    opacity: 0.5;
+    text-align: center;
+    color: #cccccc;
+}

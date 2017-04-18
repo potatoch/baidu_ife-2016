@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+    <button id="button">确认填写</button>
+
+    <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+    <script type="text/javascript">
+        (function() {
+            /*	
+            在注释下方写下代码
+            给按钮button绑定一个点击事件
+            在事件处理函数中
+            获取aqi-input输入的值，并显示在aqi-display中
+            */
+            var $ = function(id) {
+                return document.getElementById(id);
+            } /*函数方法封装*/
+
+            function handler() {
+                var num = Number($("aqi-input").value);
+                if ((!isNaN(num)) && (num > 0) && (num < 1000)) {
+                    $("aqi-display").innerHTML = num;
+                } else {
+                    alert("\"" + $("aqi-input").value + "\"" + "不是有效的AQI数值，请重新输入0-1000的有效数值！");
+                }
+            }
+            $("button").onclick = function() {
+                handler(); /*点击事件*/
+            }
+            $("aqi-input").onkeyup = function(event) {
+                if (event.keyCode == 13) {
+                    handler(); /*回车键事件*/
+                }
+            }
+
+        })();
+
+
+        var person = new Object();
+        person.name = "1";
+        person = new Object();
+        person.name = "2";
+        console.log(person.name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        process.stdin.resume();
+        process.stdin.setEncoding('ascii');
+
+        var input = "";
+        var input_array = "";
+
+        process.stdin.on('data', function(data) {
+            input += data;
+        });
+
+        process.stdin.on('end', function() {
+            input_array = input.split("\n");
+            var nLine = 0;
+
+            while (nLine < input_array.length) {
+                var line = input_array[nLine++].trim();
+                if (line === '') {
+                    continue;
+                }
+                var input_arrays = line.split(' ');
+                var a = +input_arrays[0];
+                var b = +input_arrays[1];
+                console.log(a + b);
+            }
+        });
+
+
+
+
+
+        var readline = require('readline');
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout,
+            terminal: false
+        });
+
+        var n = -1; // 初始状态为负数，表示还没开始读取
+        var ans = 0;
+        var cur_line = 0;
+        rl.on('line', function(line) { // javascript每行数据的回调接口
+            if (n < 0) { // 测试用例第一行读取n
+                n = parseInt(line.trim())
+            } else {
+                // 矩阵数据读取
+                var tokens = line.split(' ');
+                for (var i = 0; i < tokens.length; ++i) {
+                    // 题目逻辑求和，边读取边计算
+                    ans += parseInt(tokens[i]);
+                }
+                // 记录当前读取的行数
+                cur_line += 1;
+            }
+
+            // 读取行数结束，如果确定只有一行额外的数据输入，也可以通过cur_line === 1来判断
+            if (n === cur_line) {
+                // 输出结果
+                console.log(ans);
+                // 重新初始化相关变量
+                n = -1;
+                ans = 0;
+                cur_line = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+ * {
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ .tabs {
+     position: absolute;
+     margin: 30px;
+ }
+ 
+ .tab {
+     float: left;
+     margin-right: 10px;
+ }
+ 
+ .content {
+     position: absolute;
+     left: 0;
+     top: 27px;
+     padding: 28px 49px 35px 38px;
+     width: 403px;
+     height: 200px;
+     border: 1px solid #cacbcb;
+     border-radius: 0 5px 5px;
+     background: #fff;
+ }
+ 
+ table {
+     width: 100%;
+     text-align: center;
+     border: 1px solid #cacbcb;
+     line-height: 28px;
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ 
+ table td:hover {
+     background: #f4f6f7;
+ }
+ 
+ input {
+     display: none;
+ }
+ 
+ label {
+     cursor: pointer;
+     width: 86px;
+     height: 27px;
+     display: block;
+     text-align: center;
+     line-height: 27px;
+     background: #ededf0;
+     border: 1px solid #ededf0;
+     border-radius: 5px 5px 0 0;
+     color: #535353;
+ }
+ 
+ .tab input:checked~.content {
+     z-index: 1;
+ }
+ 
+ .tab [id^='check']:checked~label {
+     position: relative;
+     z-index: 2;
+     border: 1px solid #cacbcb;
+     border-bottom: none;
+     background: #fff;
+ }
